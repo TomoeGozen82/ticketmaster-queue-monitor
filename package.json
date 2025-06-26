@@ -1,0 +1,31 @@
+{
+  "name": "ticketmaster-queue-tool-js",
+  "version": "1.0.0",
+  "description": "Ticketmaster Queue Tool built with Electron and Puppeteer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-dev-exe": "electron-packager . TicketmasterQueueTool --platform=win32 --arch=x64 --out=dist/ --overwrite --asar=false"
+  },
+  "keywords": [
+    "ticketmaster",
+    "queue",
+    "automation",
+    "electron",
+    "puppeteer"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "electron": "^32.0.0",
+    "node-easyocr": "^latest",
+    "puppeteer": "^23.0.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "devDependencies": {
+    "electron-packager": "^17.1.1",
+    "electron-reload": "^1.5.0"
+  }
+}
